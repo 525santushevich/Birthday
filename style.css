@@ -1,39 +1,173 @@
-.navbar {
-    background-color: none;
-}
-
-.nav-link {
-    font-size: 2rem;
-}
-
-.nav-item {
-    font-family: 'Acme', sans-serif;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-font-family: 'Rubik Doodle Shadow', system-ui;
+body {
+    background-color: #eeaadc;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+  }
+  
+  /* buttons */
+  .btn {
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 140px;
+    margin: 10px 7px 10px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 28px;
+    justify-content: center;
+    letter-spacing: 2px;
+    color: #000000;
+    box-shadow: 2px 2px 2px #000000;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    font-family: 'Nanum Pen Script', cursive;
+    background-color: #96b58d;
+    margin-top: 2%;
+  }
+  
+  .btn:hover {
+    color: whitesmoke;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    background: #263e0f;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.1s ease-in;
+  }
+  
+  .btn:hover:before {
+    top: 0;
+  }
+  
+  /* title, birthday, instructions */
+  .title {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    margin-top: 1.4%;
+  }
+  
+  .maint {
+    font-size: 570%;
+    color: #ebebeb;
+    text-shadow: 2px 2px #000000;
+  }
+  
+  .bday {
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    margin-top: 1.5%;
+  }
+  
+  .birth {
+    font-size: 560%;
+    color: #ebebeb;
+    text-shadow: 2px 2px 2px #96b58d;
+  }
+  
+  #event-info {
+    text-align: center;
+    background-color: #f1c9fe;
+  }
+  
+  #event-title {
+    color: #333;
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  p {
+    font-family: 'Lora', serif;
+    font-size: 150%;
+    color: #263e0f;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Text for events */
+  #words {
+    font-family: 'Lora', serif;
+    font-size: 150%;
+    color: #263e0f;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Footer Style NOT MY CODE*/
+  .footer-basic {
+    padding: 20px;
+    background-color: #f1c9fe;
+    color: #4b4c4d;
+    margin-top: 5%;
+  }
+  
+  .footer- {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer-basic li {
+    padding: 0 10px;
+  }
+  
+  .footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity: 1;
+  }
+  
+  .footer-basic .social {
+    text-align: center;
+  }
+  
+  .footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: inherit;
+    opacity: 0.75;
+  }
+  
+  .footer-basic .social>a:hover {
+    opacity: 0.9;
+  }
+  
+  .footer-basic .copyright {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin-bottom: -2%;
+  }
